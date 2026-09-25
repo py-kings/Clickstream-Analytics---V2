@@ -1,0 +1,21 @@
+# Environment
+venv/
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Data
+data/
+
+# Old V1 / local artifacts
+clciksteem/
+clickstrm.zip
+
+# Power BI local files
+dash.Report/
+dash.SemanticModel/
+dash.pbip
+dash.pbit
+power bi/
