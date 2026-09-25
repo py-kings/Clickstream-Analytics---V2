@@ -2,25 +2,55 @@
 
 
 
-An upgraded, production-style clickstream analytics pipeline built with
-
-Python, Kafka, PySpark, Airflow, Docker, and Power BI.
+An upgraded version of my Clickstream Analytics project, redesigned as a scalable and production-oriented data engineering pipeline.
 
 
 
-\## V2 Goals
+\## 🚀 V2 Focus
 
 
 
 \- Real-time clickstream ingestion
 
-\- Scalable data processing
+\- Kafka-based streaming
+
+\- PySpark data processing
 
 \- Bronze → Silver → Gold architecture
 
-\- Workflow orchestration with Airflow
+\- Airflow orchestration
 
-\- Analytics-ready data for Power BI
+\- Dockerized local environment
 
-\- Fully reproducible local environment
+\- Power BI analytics dashboard
+
+
+
+\## 🏗️ Architecture
+
+
+
+```text
+
+Event Source
+
+&#x20;    ↓
+
+&#x20;  Kafka
+
+&#x20;    ↓
+
+Bronze Layer
+
+&#x20;    ↓
+
+Silver Layer
+
+&#x20;    ↓
+
+Gold Layer
+
+&#x20;    ↓
+
+Power BI
 
