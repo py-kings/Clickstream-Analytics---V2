@@ -1,21 +1,55 @@
-# Environment
-venv/
+# Secrets and local configuration
 .env
+.env.*
+!.env.example
 
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
 
-# Data
-data/
+# Virtual environments
+venv/
+.venv/
+airflow-venv/
 
-# Old V1 / local artifacts
-clciksteem/
-clickstrm.zip
+# Generated data and runtime state
+delta-lake/
+spark-checkpoints/
+spark-warehouse/
+metastore_db/
+derby.log
+mlruns/
+mlflow_models/
+powerbi_exports/
+powerbi_tmp_*/
+*.parquet
+*.csv.crc
+.ipynb_checkpoints/
 
-# Power BI local files
-dash.Report/
-dash.SemanticModel/
-dash.pbip
-dash.pbit
-power bi/
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Additional local environments and runtime files
+.venv-spark39/
+logs/
+tmp_export_*/
+*.bak
+
+# Local generated Power BI data
+powerbi_data/
+powerbi_tmp_*/
+
+# Generated local analytics exports
+powerbi_data/
+powerbi_exports/
+powerbi_tmp_*/
+tmp_export_*/

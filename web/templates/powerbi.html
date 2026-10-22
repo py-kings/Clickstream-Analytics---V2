@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Power BI — Clickstream Analytics</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #172033;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: auto;
+            padding: 35px 24px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #64748b;
+            margin-bottom: 25px;
+        }
+
+        .dashboard {
+            background: white;
+            border: 1px solid #dbe2ea;
+            border-radius: 14px;
+            padding: 15px;
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+        }
+
+        .dashboard img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .note {
+            margin-top: 18px;
+            padding: 14px 18px;
+            background: #e8f0ff;
+            border-radius: 9px;
+            color: #334155;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a class="back" href="/">
+        ← Back to Dashboard
+    </a>
+
+    <h1>Power BI — Clickstream Analytics</h1>
+
+    <p class="subtitle">
+        E-commerce analytics dashboard
+    </p>
+
+    <div class="dashboard">
+
+        <img
+            src="{{ url_for('static', filename='powerbi-dashboard.png') }}"
+            alt="Clickstream Analytics Power BI Dashboard">
+
+    </div>
+
+    <div class="note">
+        Dashboard built in Power BI Desktop using the processed clickstream
+        analytics data.
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
